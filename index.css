@@ -26,7 +26,9 @@ img {
   height: auto;
   margin-inline: 25vw;
   margin-block: 25vh;
-  animation: slideIn 1s ease-in forwards;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 img:hover {
@@ -35,10 +37,13 @@ img:hover {
 }
 
 @keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-100vw);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
 }
