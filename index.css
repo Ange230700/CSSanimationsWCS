@@ -27,8 +27,8 @@ img {
   margin-inline: 25vw;
   margin-block: 25vh;
   animation-name: slideIn;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
 }
 
 img:hover {
@@ -38,12 +38,12 @@ img:hover {
 
 @keyframes slideIn {
   0% {
-    transform: translateX(-100vw);
+    transform: translate(0, 0);
   }
   50% {
-    transform: translateX(0);
+    transform: translate(10vw, 10vh) rotate(15deg) scale(0.7);
   }
   100% {
-    transform: translateX(100vw);
+    transform: translate(0, 0) rotate(0deg) scale(1);
   }
 }
